@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+		<body style="background-color:powderblue;">
+
+			
+				<h1 style="background-color:DodgerBlue;text-align:center;font-size:300%;border:2px solid Tomato;">I like amongus</h1>
+				<p style="background-color:MediumSeaGreen;text-align:center;font-size:220%;border:2px solid Tomato;;">But as a joke since there is so much funny among us content on the internet</p>
+				<h1 style="background-color:DodgerBlue;text-align:center;font-size:300%;border:2px solid Tomato;">So we have a few videos</h1>
+
+				<p style="background-color:MediumSeaGreen;text-align:center;font-size:220%;border:2px solid Tomato;">videos activate!</p>
+				
+			<audio controls>
+				
+				<source src="Amogus.mp3" type="audio/mpeg">
+			</audio>
+			<hr>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/nNbDeWLY9ro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<hr>
+		<img src="JPG.jpg" alt="yes">
+		<hr>
+			<a href="file:///C:/Users/6-7%20klas%C4%97/Desktop/as%20nezinau%20ka%20darau/spastai.html">weik!</a>
+			<a href=" "PIESK</a>
+		<hr>
+		<input id="a" type="number" value="0" oninput="sudek();"> + <input id="b" type="number" value="0" oninput="sudek();"> = <h1 id="ats"></h1>
+		
+	
+	
+		<hr>
+		
+<canvas id="myCanvas" width="800" height="800" style="border:1px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+<input type="number" oninput="greitis = this.value;">
+
+ 
+
+<script>
+//Canvas ir javascript sąsaja
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+
+
+
+
+//Kintamųjų deklaracija
+var i = 0;
+var kryptis = 1;
+var greitis = 5;
+var i_vertikaliai = 0;
+var kryptis_vertikaliai = 1;
+var greitis_vertikaliai = 10;
+var raudona = 0;
+var zalia = 0;
+var melyna = 0;
+
+
+
+
+
+
+//Kvadrato piešimo funkcijos deklaracija
+function piesk(x, y, width, height) {
+//ctx.clearRect(0, 0, 1200, 1200); //Šita eilutė išvalo visą drobę.
+melyna = melyna + 1;
+zalia = zalia + 2;
+raudona = raudona + 4;
+if (melyna > 255) melyna = 4;
+if (zalia > 255) zalia = 9;
+if (raudona > 255) raudona = 3;
+ctx.fillStyle = 'rgb('+raudona+','+zalia+','+melyna+')'; // Nudažys visas būsimas figūras mėlynai
+ctx.fillRect(x, y, width, height); //Nupiešia kvadratą
+i = i + kryptis*greitis;
+if (i > 1050) kryptis = -1; //pakeičia judėjimo kryptį, kai i daugiau nei 1050
+if (i < 100) kryptis = 1; //pakeičia judėjimo kryptį, kai i mažiau nei 100
+i_vertikaliai = i_vertikaliai + kryptis_vertikaliai*greitis_vertikaliai;
+if (i_vertikaliai > 1050) kryptis_vertikaliai = -1; //pakeičia judėjimo kryptį, kai i daugiau nei 1050
+if (i_vertikaliai < 100) kryptis_vertikaliai = 1; //pakeičia judėjimo kryptį, kai i mažiau nei 100
+setTimeout(piesk, 10, i, i_vertikaliai, 30, 30);
+}
+
+
+
+
+
+piesk(i, 50, 30, 30);
+</script>
+		
+		
+		</body>
+</html>
