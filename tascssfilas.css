@@ -1,0 +1,10 @@
+.amog {display: block; position: fixed; left: 0px; top: 0px; height: 100%; width: 100%; background-image: url("amongs.jfif"); background-repeat: no-repeat; background-size: cover; z-index: -2}
+
+p {color: Orange ; font-size: 50px;font-family: "comic sans MS" }
+
+h1 {
+  font-family: "comic sans MS";
+}
+h2 {
+  font-family: "comic sans MS";
+}
