@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+
+
+
+
+<canvas id="myCanvas" width="1500" height="1000" style="border:1px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+<input type="number" oninput="spindulys = this.value;">
+
+
+
+
+
+<script>
+//Canvas ir javascript sąsaja
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+
+
+
+
+//Kintamųjų deklaracija
+var spindulys = 15;
+
+
+
+
+
+
+function veikejas(e) {
+var x = e.clientX;
+var y = e.clientY;
+ctx.strokeStyle = "blue";
+ctx.lineWidth = 30;
+ctx.beginPath();
+ctx.arc(x, y, spindulys, 0, 4 * Math.PI);
+ctx.stroke();
+}
+
+
+
+
+
+ctx.fillStyle = "orange";
+ctx.fillRect(0, 0, 3200, 2000);
+
+
+
+
+
+veikejas(1000, 2100);
+
+
+
+
+
+document.addEventListener("mousemove", veikejas);
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
